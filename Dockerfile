@@ -3,7 +3,7 @@ FROM docker.io/centos:centos8
 RUN dnf install -y python3 python3-requests && \
     curl https://raw.githubusercontent.com/openstack/tripleo-repos/master/tripleo_repos/main.py | python3 - -b master current-tripleo && \
     dnf install -y epel-release 'dnf-command(config-manager)' && \
-    dnf config-manager --set-enabled PowerTools && \
+    dnf config-manager --set-enabled powertools && \
     dnf update -y && \
     dnf install -y openstack-ironic-python-agent lshw smartmontools \
       iproute python3-hardware-detect mdadm biosdevname ipmitool && \

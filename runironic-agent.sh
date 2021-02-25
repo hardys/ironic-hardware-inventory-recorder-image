@@ -10,5 +10,4 @@ else
 fi
 
 exec /usr/bin/ironic-collect-introspection-data \
-    --inspection_callback_url ${URL_CALLBACK} \
-    --introspection_daemon
+    --inspection_callback_url ${URL_CALLBACK}
